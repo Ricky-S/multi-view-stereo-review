@@ -8,6 +8,9 @@ This document collates a variety of learning-based methods employed in multi-vie
   - [Table of Contents](#table-of-contents)
     - [MVSNet: Depth Inference for Unstructured Multi-View Stereo (2018)](#mvsnet-depth-inference-for-unstructured-multi-view-stereo-2018)
     - [Cascade cost volume for high-resolution multi-view stereo and stereo matching (2020)](#cascade-cost-volume-for-high-resolution-multi-view-stereo-and-stereo-matching-2020)
+    - [Normal Assisted Stereo Depth Estimation (2020)](#normal-assisted-stereo-depth-estimation-2020)
+    - [Rethinking Depth Estimation for Multi-View Stereo: A Unified Representation (2022)](#rethinking-depth-estimation-for-multi-view-stereo-a-unified-representation-2022)
+    - [TransMVSNet: Global Context-aware Multi-view Stereo Network with Transformers (2022)](#transmvsnet-global-context-aware-multi-view-stereo-network-with-transformers-2022)
 
 
 <!-- ## Recent Methods -->
@@ -49,3 +52,77 @@ This document collates a variety of learning-based methods employed in multi-vie
 | intermediate     | Mean | Family | Francis | Horse | Lighthouse | M60 | Panther | Playground | Train |
 |--------------|------|--------|---------|-------|------------|-----|---------|------------|-------|
 | Value        | 56.42|  76.36 |  58.45  | 46.20 |  55.53     |56.11|  54.02  |  58.17     | 46.56 |
+
+
+
+### Normal Assisted Stereo Depth Estimation (2020)
+- **Paper Link**: [CVPR_2020](https://openaccess.thecvf.com/content_CVPR_2020/papers/Kusupati_Normal_Assisted_Stereo_Depth_Estimation_CVPR_2020_paper.pdf)
+- code: [github PyTorch](https://github.com/udaykusupati/Normal-Assisted-Stereo)
+- **Method Name**: 
+- **Description**: Enforce the consistency between surface normal and depth at training time to improve performance. It introduces a multi-view normal estimation module and a multi-view depth estimation module, and proposes a novel consistency loss to train an independent consistency module that refines the depths from depth/normal pairs. The joint learning approach is highlighted to improve both the prediction of normal and depth, and further, the accuracy and smoothness are improved by enforcing the consistency. The joint learning approach and the proposed consistency loss present a robust method for refining depth estimates, improving accuracy and smoothness in depth prediction. 
+
+
+### Rethinking Depth Estimation for Multi-View Stereo: A Unified Representation (2022)
+- **Paper Link**: [CVPR_2022](https://openaccess.thecvf.com/content/CVPR2022/papers/Peng_Rethinking_Depth_Estimation_for_Multi-View_Stereo_A_Unified_Representation_CVPR_2022_paper.pdf)
+- code: [github](https://github.com/prstrive/UniMVSNet)
+- **Method Name**: UniMVSNet
+- **Description**: A new loss function called "Unified Focal Loss" is designed to address the challenges of sample imbalance. The paper introduces a coarse-to-fine framework termed UniMVSNet which employs the Unification representation and the Unified Focal Loss for optimization.
+- **Weaknesses**:
+  - **Complexity**:
+- **Results**:
+  - **Benchmark Performance**:
+    - **DTU Dataset**: 
+    - **Tanks and Temples Benchmark**: 
+
+| Metric       | Acc. (mm) | Comp. (mm) | Overall (mm) |
+|--------------|-----------|------------|--------------|
+| Value        | 0.352     | 0.278      | 0.315        |
+
+| Category    | int Mean | Fam. | Fra. | Hor. | Lig. | M60  | Pan. | Pla. | Tra. | adv Mean | Aud. | Bal. | Cou. | Mus. | Pal. | Tem. |
+|-------------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|
+| Value       | **64.36**| 81.20| 66.43| 53.11| 63.46| 66.09| 64.84| 62.23| 57.53| **38.96**| 28.33| 44.36| 39.74| 52.89| 33.80| 34.63|
+
+
+### TransMVSNet: Global Context-aware Multi-view Stereo Network with Transformers (2022)
+- **Paper Link**: [CVPR_2022](https://openaccess.thecvf.com/content/CVPR2022/papers/Ding_TransMVSNet_Global_Context-Aware_Multi-View_Stereo_Network_With_Transformers_CVPR_2022_paper.pdf)
+- code: [github PyTorch](https://github.com/megvii-research/TransMVSNet)
+- **Method Name**: TransMVSNet
+- **Description**: Feature Matching Transformer (FMT) to leverage intra- (self-) and inter- (cross-) attention mechanisms to aggregate long-range context information within and across images. To facilitate better adaptation of the FMT, an Adaptive Receptive Field (ARF) module is employed to ensure a smooth transition in scopes of features, and different stages are bridged with a feature pathway to pass transformed features and gradients across different scales.
+- **Weaknesses**:
+  - **Complexity**:
+- **Results**:
+  - The batch size is 1 on 8 NVIDIA RTX
+2080Ti GPUs and in total, the training phase takes about 16
+hours and occupies 10GB memory of each GPU. 
+  - **Benchmark Performance**:
+    - **DTU Dataset**: 
+    - **Tanks and Temples Benchmark**: 
+  
+| Metric       | Acc. (mm) | Comp. (mm) | Overall (mm) |
+|--------------|-----------|------------|--------------|
+| Value        | 0.321     | 0.289      | 0.305        |
+
+| Category    | int Mean | Fam. | Fra. | Hor. | Lig. | M60  | Pan. | Pla. | Tra. | adv Mean | Aud. | Bal. | Cou. | Mus. | Pal. | Tem. |
+|-------------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|
+value |**63.52**| 80.92| 65.83| 56.94| 62.54| 63.06| 60.00| 60.20| 58.67| **37.00**| 24.84| 44.59| 34.77| 46.49| 34.69| 36.62|
+
+
+
+
+
+
+
+
+
+
+<!-- ### template (2020)
+- **Paper Link**: [CVPR_2020]()
+- code: [github]()
+- **Method Name**: 
+- **Description**: 
+- **Weaknesses**:
+  - **Complexity**:
+- **Results**:
+  - **Benchmark Performance**:
+    - **DTU Dataset**: 
+    - **Tanks and Temples Benchmark**:  -->
