@@ -11,6 +11,7 @@ This document collates a variety of learning-based methods employed in multi-vie
     - [Normal Assisted Stereo Depth Estimation (2020)](#normal-assisted-stereo-depth-estimation-2020)
     - [Rethinking Depth Estimation for Multi-View Stereo: A Unified Representation (2022)](#rethinking-depth-estimation-for-multi-view-stereo-a-unified-representation-2022)
     - [TransMVSNet: Global Context-aware Multi-view Stereo Network with Transformers (2022)](#transmvsnet-global-context-aware-multi-view-stereo-network-with-transformers-2022)
+    - [Is-mvsnet: importance sampling-based mvsnet (2022)](#is-mvsnet-importance-sampling-based-mvsnet-2022)
 
 
 <!-- ## Recent Methods -->
@@ -108,11 +109,25 @@ value |**63.52**| 80.92| 65.83| 56.94| 62.54| 63.06| 60.00| 60.20| 58.67| **37.0
 
 
 
+### Is-mvsnet: importance sampling-based mvsnet (2022)
+- **Paper Link**: [European Conference on Computer Vision, 2022](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136920663.pdf)
+- code: [github](https://github.com/NoOneUST/IS-MVSNet)
+- **Method Name**: IS-MVSNet
+- **Description**: 
+- **Weaknesses**:
+  - **Complexity**:
+- **Results**:
+  - **Benchmark Performance**:
+    - **DTU Dataset**: 
+    - **Tanks and Temples Benchmark**:
 
+| Metric       | Acc. (mm) | Comp. (mm) | Overall (mm) |
+|--------------|-----------|------------|--------------|
+| Value        | 0.351     | 0.359      | 0.355        |
 
-
-
-
+| Category    | inter Mean | Fam. | Fra. | Hor. | Lig. | M60  | Pan. | Pla. | Tra. | adv Mean | Aud. | Bal. | Cou. | Mus. | Pal. | Tem. |
+|-------------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|
+value |**62.82**| 79.92| 62.05| ..| ..|  |  | | | **34.87**| | | | | | |
 
 
 <!-- ### template (2020)
