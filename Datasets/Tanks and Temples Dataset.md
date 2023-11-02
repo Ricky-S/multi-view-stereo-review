@@ -1,0 +1,3 @@
+### Tanks and Temples Dataset (Benchmarking Large-Scale Scene Reconstruction)
+- **Website**: [Tanks and Temples Dataset](https://www.tanksandtemples.org/)
+- **Description**: The Tanks & Temples dataset presents a diverse collection of both indoor and outdoor scenes captured in real-world, complex scenarios. The dataset is categorized into intermediate and advanced sets, with the intermediate set comprising 8 scenes showcasing large-scale variations, while the advanced set features 6 scenes. This dataset serves as a robust benchmark for large-scale scene reconstruction tasks.

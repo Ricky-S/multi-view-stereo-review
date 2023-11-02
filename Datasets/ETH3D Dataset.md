@@ -1,0 +1,3 @@
+### ETH3D Dataset (High-Resolution Multi-View Stereo)
+- **Website**: [ETH3D Dataset](https://www.eth3d.net/)
+- **Description**: The ETH3D dataset provides a collection of high-resolution images catering to Multi-View Stereo (MVS) and Structure from Motion (SfM) research. Comprising both indoor and outdoor scenes, this dataset includes a variety of challenges such as varying lighting conditions, reflective surfaces, and large scene depths. The rich annotation and ground truth data make it a valuable resource for evaluating and benchmarking MVS algorithms.

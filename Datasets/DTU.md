@@ -1,0 +1,3 @@
+### DTU Dataset (Large-Scale Data for Multiple-View Stereopsis)
+- **Website**: [DTU Dataset](https://roboimagedata.compute.dtu.dk/?page_id=36)
+- **Description**: The DTU dataset is a comprehensive indoor multi-view stereo dataset encompassing 124 distinct scenes captured from either 49 or 64 different viewpoints under 7 varying lighting conditions. The dataset, collected by a robot arm equipped with a structured light scanner, showcases fixed camera trajectories across different scenes, offering a rich resource for evaluating MVS algorithms.
