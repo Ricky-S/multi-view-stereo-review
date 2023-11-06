@@ -6,17 +6,18 @@ This document collates a variety of learning-based methods employed in multi-vie
 
 - [Learning-Based Methods in Multi-View Stereo](#learning-based-methods-in-multi-view-stereo)
   - [Table of Contents](#table-of-contents)
-    - [MVSNet: Depth Inference for Unstructured Multi-View Stereo (2018)](#mvsnet-depth-inference-for-unstructured-multi-view-stereo-2018)
-    - [Cascade cost volume for high-resolution multi-view stereo and stereo matching (2020)](#cascade-cost-volume-for-high-resolution-multi-view-stereo-and-stereo-matching-2020)
-    - [Normal Assisted Stereo Depth Estimation (2020)](#normal-assisted-stereo-depth-estimation-2020)
-    - [Rethinking Depth Estimation for Multi-View Stereo: A Unified Representation (2022)](#rethinking-depth-estimation-for-multi-view-stereo-a-unified-representation-2022)
-    - [TransMVSNet: Global Context-aware Multi-view Stereo Network with Transformers (2022)](#transmvsnet-global-context-aware-multi-view-stereo-network-with-transformers-2022)
-    - [Is-mvsnet: importance sampling-based mvsnet (2022)](#is-mvsnet-importance-sampling-based-mvsnet-2022)
+    - [MVSNet: Depth Inference for Unstructured Multi-View Stereo (ECCV\_2018)](#mvsnet-depth-inference-for-unstructured-multi-view-stereo-eccv_2018)
+    - [Cascade cost volume for high-resolution multi-view stereo and stereo matching (CVPR\_2020)](#cascade-cost-volume-for-high-resolution-multi-view-stereo-and-stereo-matching-cvpr_2020)
+    - [Normal Assisted Stereo Depth Estimation (CVPR\_2020)](#normal-assisted-stereo-depth-estimation-cvpr_2020)
+    - [Rethinking Depth Estimation for Multi-View Stereo: A Unified Representation (CVPR\_2022)](#rethinking-depth-estimation-for-multi-view-stereo-a-unified-representation-cvpr_2022)
+    - [TransMVSNet: Global Context-aware Multi-view Stereo Network with Transformers (CVPR\_2022)](#transmvsnet-global-context-aware-multi-view-stereo-network-with-transformers-cvpr_2022)
+    - [Is-mvsnet: importance sampling-based mvsnet (ECCV\_2022)](#is-mvsnet-importance-sampling-based-mvsnet-eccv_2022)
+    - [Multi-View Stereo Representation Revist: Region-Aware MVSNet (CVPR\_2023)](#multi-view-stereo-representation-revist-region-aware-mvsnet-cvpr_2023)
 
 
 <!-- ## Recent Methods -->
 
-### MVSNet: Depth Inference for Unstructured Multi-View Stereo (2018)
+### MVSNet: Depth Inference for Unstructured Multi-View Stereo (ECCV_2018)
 - **Paper Link**: [ECCV_2018](https://openaccess.thecvf.com/content_ECCV_2018/papers/Yao_Yao_MVSNet_Depth_Inference_ECCV_2018_paper.pdf)
 - code: [github MVSNet](https://github.com/YoYo000/MVSNet)
 - [github MVSNet Pytorch](https://github.com/xy-guo/MVSNet_pytorch)
@@ -31,7 +32,7 @@ This document collates a variety of learning-based methods employed in multi-vie
 - **Significance**: MVSNet represents a significant step towards employing deep learning in multi-view stereo, demonstrating the potential of learned cost volumes for depth inference. Its end-to-end trainable framework showcases the possibilities of integrating learning-based approaches in MVS, pushing the boundaries of what can be achieved in depth inference and 3D reconstruction from multiple views. This work lays a foundation for further explorations into deep learning-based MVS methods, inspiring subsequent research in this domain.
 
 
-### Cascade cost volume for high-resolution multi-view stereo and stereo matching (2020)
+### Cascade cost volume for high-resolution multi-view stereo and stereo matching (CVPR_2020)
 - **Paper Link**: [CVPR_2020](https://openaccess.thecvf.com/content_CVPR_2020/papers/Gu_Cascade_Cost_Volume_for_High-Resolution_Multi-View_Stereo_and_Stereo_Matching_CVPR_2020_paper.pdf)
 - code: [github CasMVSNet](https://github.com/alibaba/cascade-stereo)
 - **Method Name**: CasMVSNet
@@ -56,14 +57,14 @@ This document collates a variety of learning-based methods employed in multi-vie
 
 
 
-### Normal Assisted Stereo Depth Estimation (2020)
+### Normal Assisted Stereo Depth Estimation (CVPR_2020)
 - **Paper Link**: [CVPR_2020](https://openaccess.thecvf.com/content_CVPR_2020/papers/Kusupati_Normal_Assisted_Stereo_Depth_Estimation_CVPR_2020_paper.pdf)
 - code: [github PyTorch](https://github.com/udaykusupati/Normal-Assisted-Stereo)
 - **Method Name**: 
 - **Description**: Enforce the consistency between surface normal and depth at training time to improve performance. It introduces a multi-view normal estimation module and a multi-view depth estimation module, and proposes a novel consistency loss to train an independent consistency module that refines the depths from depth/normal pairs. The joint learning approach is highlighted to improve both the prediction of normal and depth, and further, the accuracy and smoothness are improved by enforcing the consistency. The joint learning approach and the proposed consistency loss present a robust method for refining depth estimates, improving accuracy and smoothness in depth prediction. 
 
 
-### Rethinking Depth Estimation for Multi-View Stereo: A Unified Representation (2022)
+### Rethinking Depth Estimation for Multi-View Stereo: A Unified Representation (CVPR_2022)
 - **Paper Link**: [CVPR_2022](https://openaccess.thecvf.com/content/CVPR2022/papers/Peng_Rethinking_Depth_Estimation_for_Multi-View_Stereo_A_Unified_Representation_CVPR_2022_paper.pdf)
 - code: [github](https://github.com/prstrive/UniMVSNet)
 - **Method Name**: UniMVSNet
@@ -84,7 +85,7 @@ This document collates a variety of learning-based methods employed in multi-vie
 | Value       | **64.36**| 81.20| 66.43| 53.11| 63.46| 66.09| 64.84| 62.23| 57.53| **38.96**| 28.33| 44.36| 39.74| 52.89| 33.80| 34.63|
 
 
-### TransMVSNet: Global Context-aware Multi-view Stereo Network with Transformers (2022)
+### TransMVSNet: Global Context-aware Multi-view Stereo Network with Transformers (CVPR_2022)
 - **Paper Link**: [CVPR_2022](https://openaccess.thecvf.com/content/CVPR2022/papers/Ding_TransMVSNet_Global_Context-Aware_Multi-View_Stereo_Network_With_Transformers_CVPR_2022_paper.pdf)
 - code: [github PyTorch](https://github.com/megvii-research/TransMVSNet)
 - **Method Name**: TransMVSNet
@@ -109,8 +110,8 @@ value |**63.52**| 80.92| 65.83| 56.94| 62.54| 63.06| 60.00| 60.20| 58.67| **37.0
 
 
 
-### Is-mvsnet: importance sampling-based mvsnet (2022)
-- **Paper Link**: [European Conference on Computer Vision, 2022](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136920663.pdf)
+### Is-mvsnet: importance sampling-based mvsnet (ECCV_2022)
+- **Paper Link**: [ECCV_2022](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136920663.pdf)
 - code: [github](https://github.com/NoOneUST/IS-MVSNet)
 - **Method Name**: IS-MVSNet
 - **Description**: 
@@ -129,6 +130,30 @@ value |**63.52**| 80.92| 65.83| 56.94| 62.54| 63.06| 60.00| 60.20| 58.67| **37.0
 |-------------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|
 value |**62.82**| 79.92| 62.05| ..| ..|  |  | | | **34.87**| | | | | | |
 
+
+
+### Multi-View Stereo Representation Revist: Region-Aware MVSNet (CVPR_2023)
+- **Paper Link**: [CVPR_2023](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Multi-View_Stereo_Representation_Revist_Region-Aware_MVSNet_CVPR_2023_paper.pdf)
+- code: [github not available]()
+- **Method Name**: RA-MVSNet
+- **Description**: 
+- Introduce point-to-surface distance supervision of sampled points to expand the perception range predicted by the model, which achieves complete estimation in textureless areas and reduce outliers in object boundary regions.
+- Tackle the challenge of lacking the ground-truth mesh, we compute the signed distance between point sets based on the triangulated mesh, which trades off
+between accuracy and speed.
+- **Weaknesses**:
+  <!-- - **Complexity**: -->
+- **Results**:
+  - **Benchmark Performance**:
+    - **DTU Dataset**: 
+    - **Tanks and Temples Benchmark**:
+
+| Metric       | Acc. (mm) | Comp. (mm) | Overall (mm) |
+|--------------|-----------|------------|--------------|
+| Value        | 0.326     | 0.268      | 0.297        |
+
+| Method    | inter Mean | Fam. | Fra. | Hor. | Lig. | M60  | Pan. | Pla. | Tra. | adv Mean | Aud. | Bal. | Cou. | Mus. | Pal. | Tem. |
+|-------------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|
+RA-MVSNet |**65.72**| | | ..| ..|  |  | | | **39.93**| | | | | | |
 
 <!-- ### template (2020)
 - **Paper Link**: [CVPR_2020]()
