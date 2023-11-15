@@ -13,7 +13,7 @@ This document collates a variety of learning-based methods employed in multi-vie
     - [TransMVSNet: Global Context-aware Multi-view Stereo Network with Transformers (CVPR\_2022)](#transmvsnet-global-context-aware-multi-view-stereo-network-with-transformers-cvpr_2022)
     - [Is-mvsnet: importance sampling-based mvsnet (ECCV\_2022)](#is-mvsnet-importance-sampling-based-mvsnet-eccv_2022)
     - [Multi-View Stereo Representation Revist: Region-Aware MVSNet (CVPR\_2023)](#multi-view-stereo-representation-revist-region-aware-mvsnet-cvpr_2023)
-    - [NR-MVSNet: Learning Multi-View Stereo Based on Normal Consistency and Depth Refinement](#nr-mvsnet-learning-multi-view-stereo-based-on-normal-consistency-and-depth-refinement)
+    - [NR-MVSNet: Learning Multi-View Stereo Based on Normal Consistency and Depth Refinement (TIP\_2023)](#nr-mvsnet-learning-multi-view-stereo-based-on-normal-consistency-and-depth-refinement-tip_2023)
 
 
 <!-- ## Recent Methods -->
@@ -158,17 +158,25 @@ RA-MVSNet |**65.72**| | | ..| ..|  |  | | | **39.93**| | | | | | |
 
 
 
-### NR-MVSNet: Learning Multi-View Stereo Based on Normal Consistency and Depth Refinement
+### NR-MVSNet: Learning Multi-View Stereo Based on Normal Consistency and Depth Refinement (TIP_2023)
 - **Paper Link**: [IEEE Transactions on Image Processing](https://ieeexplore.ieee.org/abstract/document/10120723)
 - code: [github](https://github.com/wdkyh/NR-MVSNet)
 - **Method Name**: NR-MVSNet
-- **Description**: 
+<!-- - **Description**: 
 - **Weaknesses**:
   - **Complexity**:
 - **Results**:
   - **Benchmark Performance**:
     - **DTU Dataset**: 
-    - **Tanks and Temples Benchmark**:
+    - **Tanks and Temples Benchmark**: -->
+
+
+<!-- ### NR-MVSNet: Learning Multi-View Stereo Based on Normal Consistency and Depth Refinement
+- **Paper Link**: [IEEE Transactions on Image Processing](https://ieeexplore.ieee.org/abstract/document/10120723)
+- code: [github](https://github.com/wdkyh/NR-MVSNet)
+- **Method Name**: NR-MVSNet -->
+
+
 
 <!-- ### template (2020)
 - **Paper Link**: [CVPR_2020]()
