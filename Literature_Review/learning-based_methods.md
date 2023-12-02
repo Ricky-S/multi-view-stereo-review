@@ -6,6 +6,7 @@ This document collates a variety of learning-based methods employed in multi-vie
 
 - [Learning-Based Methods in Multi-View Stereo](#learning-based-methods-in-multi-view-stereo)
   - [Table of Contents](#table-of-contents)
+    - [Learning stereo - introduction](#learning-stereo---introduction)
     - [MVSNet: Depth Inference for Unstructured Multi-View Stereo (ECCV\_2018)](#mvsnet-depth-inference-for-unstructured-multi-view-stereo-eccv_2018)
     - [Cascade cost volume for high-resolution multi-view stereo and stereo matching (CVPR\_2020)](#cascade-cost-volume-for-high-resolution-multi-view-stereo-and-stereo-matching-cvpr_2020)
     - [Normal Assisted Stereo Depth Estimation (CVPR\_2020)](#normal-assisted-stereo-depth-estimation-cvpr_2020)
@@ -17,6 +18,10 @@ This document collates a variety of learning-based methods employed in multi-vie
 
 
 <!-- ## Recent Methods -->
+
+### Learning stereo - introduction
+- **Link**: [Nail Ibrahimli - Doctoral Student, 3D Vision, July 27, 2022](https://3d.bk.tudelft.nl/nail/stereo/)
+- **Link**: [Learning a Multi-View Stereo Machine Abhishek Kar, Sep 5, 2017](https://bair.berkeley.edu/blog/2017/09/05/unified-3d/)
 
 ### MVSNet: Depth Inference for Unstructured Multi-View Stereo (ECCV_2018)
 - **Paper Link**: [ECCV_2018](https://openaccess.thecvf.com/content_ECCV_2018/papers/Yao_Yao_MVSNet_Depth_Inference_ECCV_2018_paper.pdf)
